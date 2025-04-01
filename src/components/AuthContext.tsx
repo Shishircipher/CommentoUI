@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
+
 interface User {
   name: string;
   email: string;
@@ -22,7 +23,7 @@ declare global {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // Google OAuth Client ID
-const CLIENT_ID = 'Your Google OAuth Client ID ';
+const CLIENT_ID = import.meta.env.VITE_CLIENT_ID
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);

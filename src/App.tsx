@@ -5,7 +5,7 @@ import { getComments } from './api/Comment.js';
 import { CommentItem } from './components/CommentItem';
 import { useAuth, AuthProvider } from './components/AuthContext';
 
-const serverUrl = 'http://localhost:8000';
+const serverUrl = import.meta.env.VITE_SERVER_URL
 interface Comment {
   id: number;
   content: string;

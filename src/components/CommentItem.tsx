@@ -15,7 +15,7 @@ interface CommentItemProps {
   postId: number;
 }
 
-const serverUrl = 'http://localhost:8000';
+const serverUrl = import.meta.env.VITE_SERVER_URL;
 interface PublicAuthor {
   name : string,
   picture : string
