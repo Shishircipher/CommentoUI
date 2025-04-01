@@ -23,3 +23,6 @@ New Folder With Items
 *.njsproj
 *.sln
 *.sw?
+
+# secret key
+.env
